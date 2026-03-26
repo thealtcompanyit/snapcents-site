@@ -96,4 +96,4 @@ We may update this Privacy Policy from time to time. Changes will be posted on t
 If you have questions about this Privacy Policy, contact us at:
 
 **Alt Company**
-Email: [altcompany.it@gmail.com](mailto:altcompany.it@gmail.com)
+Email: [thealtcompany.it@gmail.com](mailto:thealtcompany.it@gmail.com)
