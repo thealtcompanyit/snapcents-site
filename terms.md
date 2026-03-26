@@ -104,4 +104,4 @@ These Terms are governed by the laws of the United States. Any disputes shall be
 If you have questions about these Terms, contact us at:
 
 **Alt Company**
-Email: [altcompany.it@gmail.com](mailto:thealtcompany.it@gmail.com)
+Email: [thealtcompany.it@gmail.com](mailto:thealtcompany.it@gmail.com)
