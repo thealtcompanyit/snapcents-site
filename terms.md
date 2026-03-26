@@ -29,6 +29,7 @@ SnapCents offers a premium upgrade ("SnapCents Pro") that unlocks features inclu
 
 - **Monthly Subscription**: $3.99/month
 - **Yearly Subscription**: $29.99/year
+- **Lifetime Purchase**: $74.99 (one-time payment)
 
 ### Subscriptions
 

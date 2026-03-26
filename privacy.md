@@ -63,7 +63,7 @@ Voice entry uses Apple's on-device speech recognition. Audio is processed locall
 
 ## Children's Privacy
 
-SnapCents is not directed at children under 13. We do not knowingly collect personal data from children under 13. The app does not require an account, does not collect personal data, and all information is stored locally on the user's device.
+SnapCents is not directed at children under 13. We do not knowingly collect personal data from children under 13. The app does not require an account, does not collect personal data, and all information is stored locally on the user's device. If you believe a child under 13 has provided us with personal information, please contact us at [thealtcompany.it@gmail.com](mailto:thealtcompany.it@gmail.com).
 
 ## Data Retention and Deletion
 
