@@ -1,0 +1,83 @@
+---
+---
+
+@import "minima";
+
+:root {
+  --accent: #1a73e8;
+  --accent-light: #e8f0fe;
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  --border: #dadce0;
+  --bg: #ffffff;
+}
+
+body {
+  color: var(--text-primary);
+}
+
+// Headers
+h1, h2, h3, h4 {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+h1 {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 0.3em;
+  margin-bottom: 0.8em;
+}
+
+h2 {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.25em;
+  margin-top: 2em;
+}
+
+// Links
+a, a:visited {
+  color: var(--accent);
+}
+
+a:hover {
+  color: darken(#1a73e8, 15%);
+}
+
+// Strong text
+strong {
+  color: var(--text-primary);
+}
+
+// Lists
+ul li, ol li {
+  margin-bottom: 0.3em;
+}
+
+// Code / inline
+code {
+  background: var(--accent-light);
+  border-radius: 3px;
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
+}
+
+// Page content spacing
+.page-content {
+  padding-top: 2em;
+}
+
+// Site header
+.site-header {
+  border-top: 3px solid var(--accent);
+}
+
+.site-title, .site-title:visited {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+}
