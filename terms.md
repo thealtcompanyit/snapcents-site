@@ -5,8 +5,6 @@ title: Terms of Use - SnapCents
 
 # Terms of Use
 
-**Last updated: March 25, 2026**
-
 Please read these Terms of Use ("Terms") carefully before using SnapCents ("the App"), developed by Alt Company ("we", "us", or "our").
 
 By downloading, installing, or using SnapCents, you agree to be bound by these Terms. If you do not agree, do not use the App.
@@ -27,31 +25,28 @@ We do not have access to your data and cannot recover it if lost. We recommend e
 
 ## 3. SnapCents Pro
 
-SnapCents offers a one-time in-app purchase ("SnapCents Pro") that unlocks premium features including iCloud Sync, PDF export, widgets, Siri shortcuts, and expanded limits for budgets, categories, and AI chat.
+SnapCents offers a premium upgrade ("SnapCents Pro") that unlocks features including iCloud Sync, PDF export, widgets, Siri shortcuts, and expanded limits for budgets, categories, and AI chat. SnapCents Pro is available through the following purchase options:
 
-- **Payment**: SnapCents Pro is a one-time, non-recurring purchase processed through the Apple App Store.
-- **No Subscription**: There are no recurring charges, subscriptions, or hidden fees.
-- **Refunds**: Refund requests are handled by Apple in accordance with their [refund policy](https://support.apple.com/en-us/HT204084).
-- **Free Trial**: New users receive a 15-day free trial of Pro features. No payment is required during the trial. After the trial expires, the App continues to function with free-tier limits.
+- **Monthly Subscription**: $3.99/month
+- **Yearly Subscription**: $29.99/year
 
-## 4. Free Tier
+### Subscriptions
 
-SnapCents is fully functional without purchase. The free tier includes:
+- Payment is charged to your Apple Account at confirmation of purchase.
+- Subscriptions automatically renew unless canceled at least 24 hours before the end of the current billing period.
+- You can manage or cancel your subscription at any time by going to **Settings > [your name] > Subscriptions** on your device.
 
-- Unlimited receipt scanning and manual entry
-- Up to 5 budgets
-- Up to 3 custom categories
-- Up to 3 AI chat messages per day
-- Up to 3 confirmed recurring expenses
-- Full search, insights, and mileage tracking
+### Free Trial
 
-Features beyond these limits require SnapCents Pro.
+- New users receive a **7-day free trial** of Pro features. No payment is required during the trial.
+- If you subscribe before the trial ends, any unused portion of the trial is forfeited.
+- After the trial expires without a purchase, the App continues to function with free-tier limits.
 
-## 5. On-Device Processing
+### Refunds
 
-All data processing — including OCR, AI categorization, insights, and bank statement parsing — happens on your device using Apple's frameworks. We do not operate servers that process your financial data.
+Refund requests are handled by Apple in accordance with their [refund policy](https://support.apple.com/en-us/HT204084).
 
-## 6. Accuracy Disclaimer
+## 4. Accuracy Disclaimer
 
 SnapCents uses optical character recognition (OCR) and on-device AI to parse receipts and bank statements. While we strive for accuracy:
 
@@ -62,23 +57,11 @@ SnapCents uses optical character recognition (OCR) and on-device AI to parse rec
 
 SnapCents is a tracking tool, not a financial advisor. Do not rely solely on the App for tax, legal, or financial decisions.
 
-## 7. Intellectual Property
+## 5. Intellectual Property
 
 SnapCents, including its design, code, icons, and content, is the intellectual property of Alt Company. All rights are reserved. The App is licensed to you, not sold.
 
-## 8. Third-Party Services
-
-SnapCents uses the following Apple platform services:
-
-- **Apple Vision Framework** — for on-device OCR
-- **Apple Foundation Models** — for on-device AI features
-- **Apple CloudKit** — for optional iCloud Sync (Pro only)
-- **Apple StoreKit** — for in-app purchases
-- **Apple TipKit** — for contextual feature discovery
-
-These services are governed by Apple's terms and privacy policies. We do not use any non-Apple third-party services.
-
-## 9. Limitation of Liability
+## 6. Limitation of Liability
 
 To the maximum extent permitted by applicable law:
 
@@ -87,19 +70,19 @@ To the maximum extent permitted by applicable law:
 - We are not responsible for inaccuracies in scanned receipts, parsed bank statements, or AI-generated content.
 - Our total liability shall not exceed the amount you paid for SnapCents Pro.
 
-## 10. Termination
+## 7. Termination
 
 You may stop using the App at any time by deleting it from your device. We reserve the right to discontinue the App or any features at any time without notice.
 
-## 11. Changes to These Terms
+## 8. Changes to These Terms
 
 We may update these Terms from time to time. Changes will be posted on this page with an updated revision date. Continued use of the App after changes constitutes acceptance of the revised Terms.
 
-## 12. Governing Law
+## 9. Governing Law
 
 These Terms are governed by the laws of the United States. Any disputes shall be resolved in accordance with applicable law.
 
-## 13. Contact Us
+## 10. Contact Us
 
 If you have questions about these Terms, contact us at:
 
