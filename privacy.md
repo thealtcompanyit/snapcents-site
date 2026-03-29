@@ -5,13 +5,7 @@ title: Privacy Policy - SnapCents
 
 # Privacy Policy
 
-**Last updated: March 25, 2026**
-
 Alt Company ("we", "us", or "our") built SnapCents as a privacy-first iOS application. This Privacy Policy explains how we handle information when you use our app.
-
-## Our Core Principle
-
-**Your data stays on your device.** SnapCents is designed so that your financial information never leaves your iPhone unless you explicitly choose otherwise.
 
 ## Information We Do Not Collect
 
@@ -57,7 +51,7 @@ If you do not enable iCloud Sync, no data leaves your device.
 
 ## Purchases
 
-SnapCents Pro is a one-time purchase processed through Apple's App Store. We do not collect or have access to your payment information. All payment processing is handled by Apple and governed by [Apple's Terms and Conditions](https://www.apple.com/legal/internet-services/itunes/).
+SnapCents Pro is available as a subscription or one-time lifetime purchase, processed through Apple's App Store. We do not collect or have access to your payment information. All payment processing is handled by Apple and governed by [Apple's Terms and Conditions](https://www.apple.com/legal/internet-services/itunes/).
 
 ## Camera and Photo Library Access
 
@@ -67,21 +61,17 @@ SnapCents requests camera access only to scan receipts. Photos are processed on-
 
 Voice entry uses Apple's on-device speech recognition. Audio is processed locally and is not transmitted to any server.
 
-## Notifications
-
-If you enable notifications, SnapCents sends local notifications for budget alerts, streak reminders, and weekly digests. These are generated on-device — no push notification server is involved.
-
-## Bank Statement Import
-
-When you import a bank statement PDF, the file is processed entirely on your device. The PDF data is not uploaded or shared. Parsed transaction data is stored locally alongside your other receipts.
-
 ## Children's Privacy
 
-SnapCents does not knowingly collect information from children under 13. The app does not require an account and does not collect personal data.
+SnapCents is not directed at children under 13. We do not knowingly collect personal data from children under 13. The app does not require an account, does not collect personal data, and all information is stored locally on the user's device.
 
-## Data Deletion
+## Data Retention and Deletion
 
-Since all data is stored on your device, you can delete it at any time by:
+- All data is stored on your device and, if enabled, in your personal iCloud account.
+- Data persists until you delete the app or manually clear your data within the app.
+- We do not operate backend servers and therefore do not retain any user data on our side.
+
+You can delete your data at any time by:
 
 - Deleting individual receipts, budgets, or expenses within the app
 - Deleting the app, which removes all local data
