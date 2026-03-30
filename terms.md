@@ -27,25 +27,31 @@ We do not have access to your data and cannot recover it if lost. We recommend e
 
 SnapCents offers a premium upgrade ("SnapCents Pro") that unlocks features including iCloud Sync, PDF export, widgets, Siri shortcuts, and expanded limits for budgets, categories, and AI chat. SnapCents Pro is available through the following purchase options:
 
-- **Monthly Subscription**: $3.99/month
-- **Yearly Subscription**: $29.99/year
-- **Lifetime Purchase**: $74.99 (one-time payment)
+- **Monthly Subscription**: $3.99/month (auto-renewable)
+- **Yearly Subscription**: $29.99/year (auto-renewable)
+- **Lifetime Purchase**: $74.99 (one-time purchase, no recurring charges)
 
-### Subscriptions
+Prices may vary by region and are displayed in your local currency at the time of purchase.
 
-- Payment is charged to your Apple Account at confirmation of purchase.
-- Subscriptions automatically renew unless canceled at least 24 hours before the end of the current billing period.
-- You can manage or cancel your subscription at any time by going to **Settings > [your name] > Subscriptions** on your device.
+### Auto-Renewal Terms
+
+Monthly and yearly subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the end of the current billing period. Your Apple Account will be charged for renewal within 24 hours prior to the end of the current period at the subscription price.
 
 ### Free Trial
 
-- New users receive a **7-day free trial** of Pro features. No payment is required during the trial.
-- If you subscribe before the trial ends, any unused portion of the trial is forfeited.
-- After the trial expires without a purchase, the App continues to function with free-tier limits.
+New users receive a **7-day free feature preview** at first launch. During this period, all Pro features are available at no cost. After 7 days, free-tier limits apply unless you subscribe. Any unused portion of a free trial period will be forfeited if you purchase a subscription before the trial ends.
+
+### Cancellation and Management
+
+You can manage or cancel your subscription at any time through your device **Settings > [your name] > Subscriptions**. Cancellation takes effect at the end of the current billing period — you retain access until then.
+
+### Payment Processor
+
+All payments are processed by Apple through the App Store. SnapCents does not collect, store, or have access to your payment information.
 
 ### Refunds
 
-Refund requests are handled by Apple in accordance with their [refund policy](https://support.apple.com/en-us/HT204084).
+SnapCents does not offer refunds directly. All refund requests are handled by Apple through [reportaproblem.apple.com](https://reportaproblem.apple.com).
 
 ## 4. Accuracy Disclaimer
 

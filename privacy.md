@@ -61,21 +61,48 @@ SnapCents requests camera access only to scan receipts. Photos are processed on-
 
 Voice entry uses Apple's on-device speech recognition. Audio is processed locally and is not transmitted to any server.
 
+## Your Rights Under GDPR (EU/EEA Users)
+
+If you are located in the European Economic Area (EEA), you have the following rights under the General Data Protection Regulation:
+
+- **Right of Access** — Request a copy of the personal data we hold about you.
+- **Right to Rectification** — Request correction of inaccurate data.
+- **Right to Erasure** — Request deletion of your data. You can delete all app data at any time by deleting the app from your device or using the "Delete All Data" option in Settings.
+- **Right to Data Portability** — Your data can be exported via the CSV and PDF export features within the app.
+- **Right to Restrict Processing** — Since all processing happens on your device, you control processing by choosing which features to use.
+- **Right to Object** — You may stop using the app at any time.
+- **Right to Lodge a Complaint** — You may contact your local data protection authority.
+
+Since SnapCents processes all data on your device and does not transmit personal data to external servers, most of these rights are automatically fulfilled by the app's architecture.
+
+To exercise any of these rights, contact us at [thealtcompany.it@gmail.com](mailto:thealtcompany.it@gmail.com).
+
+## Your Rights Under CCPA (California Users)
+
+If you are a California resident, you have the following rights under the California Consumer Privacy Act:
+
+- **Right to Know** — You may request what categories of personal information we collect and for what purpose. SnapCents stores expense data, receipt images, and budget settings on your device only.
+- **Right to Delete** — You may request deletion of your personal information. Delete the app or use "Delete All Data" in Settings.
+- **Right to Opt-Out of Sale** — SnapCents does **not** sell, share, or disclose your personal information to third parties for monetary or other valuable consideration.
+- **Right to Non-Discrimination** — We will not discriminate against you for exercising any of these rights.
+
+To submit a request, contact us at [thealtcompany.it@gmail.com](mailto:thealtcompany.it@gmail.com). We will respond within 45 days.
+
 ## Children's Privacy
 
-SnapCents is not directed at children under 13. We do not knowingly collect personal data from children under 13. The app does not require an account, does not collect personal data, and all information is stored locally on the user's device. If you believe a child under 13 has provided us with personal information, please contact us at [thealtcompany.it@gmail.com](mailto:thealtcompany.it@gmail.com).
+SnapCents is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used this app, the data exists only on that device and can be removed by deleting the app.
 
 ## Data Retention and Deletion
 
-- All data is stored on your device and, if enabled, in your personal iCloud account.
-- Data persists until you delete the app or manually clear your data within the app.
-- We do not operate backend servers and therefore do not retain any user data on our side.
+All your data (expenses, receipts, budgets, mileage trips) is stored locally on your device using Apple's SwiftData framework. If you enable iCloud Sync (Pro feature), a copy is stored in your personal iCloud account under your Apple Account — we do not have access to this data.
 
-You can delete your data at any time by:
+Data persists until you:
 
-- Deleting individual receipts, budgets, or expenses within the app
-- Deleting the app, which removes all local data
-- If iCloud Sync was enabled, you can remove synced data from Settings > Apple ID > iCloud > Manage Storage
+- Delete individual entries within the app
+- Use "Delete All Data" in Settings
+- Delete the app from your device
+
+We do not maintain any server-side copies of your data. There is no backend database or cloud service operated by us.
 
 ## Changes to This Policy
 
@@ -83,7 +110,8 @@ We may update this Privacy Policy from time to time. Changes will be posted on t
 
 ## Contact Us
 
-If you have questions about this Privacy Policy, contact us at:
+For privacy inquiries or data requests, contact us at:
 
 **Alt Company**
 Email: [thealtcompany.it@gmail.com](mailto:thealtcompany.it@gmail.com)
+Response time: Within 30 days (45 days for CCPA requests)
