@@ -81,15 +81,19 @@ To the maximum extent permitted by applicable law:
 
 You may stop using the App at any time by deleting it from your device. We reserve the right to discontinue the App or any features at any time without notice.
 
-## 8. Changes to These Terms
+## 8. Disclaimer
+
+Pricing, features, and subscription details described on this page are provided for informational purposes and may not always reflect the most current information available in the App or the App Store. In the event of any discrepancy, the pricing and terms displayed in the App Store at the time of purchase shall prevail.
+
+## 9. Changes to These Terms
 
 We may update these Terms from time to time. Changes will be posted on this page with an updated revision date. Continued use of the App after changes constitutes acceptance of the revised Terms.
 
-## 9. Governing Law
+## 10. Governing Law
 
 These Terms are governed by the laws of the United States. Any disputes shall be resolved in accordance with applicable law.
 
-## 10. Contact Us
+## 11. Contact Us
 
 If you have questions about these Terms, contact us at:
 

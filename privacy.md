@@ -104,6 +104,10 @@ Data persists until you:
 
 We do not maintain any server-side copies of your data. There is no backend database or cloud service operated by us.
 
+## Disclaimer
+
+Information on this page describes our current data practices. In the event of any discrepancy between this policy and the information displayed within the App or the App Store, the in-app disclosures shall prevail.
+
 ## Changes to This Policy
 
 We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date. Continued use of the app after changes constitutes acceptance of the revised policy.
