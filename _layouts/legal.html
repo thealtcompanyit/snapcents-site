@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.title }} for SnapCents - Privacy-first budget tracker for iOS">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/app-icon.png">
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --accent: #4F6BFF;
+      --accent-dark: #3A53E0;
+      --accent-light: rgba(79, 107, 255, 0.08);
+      --text-primary: #1A1A1A;
+      --text-secondary: rgba(0, 0, 0, 0.5);
+      --text-tertiary: rgba(0, 0, 0, 0.35);
+      --bg: #FFFFFF;
+      --bg-subtle: #F8F9FC;
+      --border-light: rgba(0, 0, 0, 0.06);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text-primary);
+      background: var(--bg);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ===== NAV ===== */
+    .site-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .nav-brand img {
+      width: 32px;
+      height: 32px;
+      border-radius: 22%;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    /* ===== CONTENT ===== */
+    .legal-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+
+    .legal-content h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      padding-bottom: 16px;
+      border-bottom: 3px solid var(--accent);
+    }
+
+    .legal-content h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .legal-content h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .legal-content p {
+      margin-bottom: 16px;
+      color: var(--text-primary);
+      line-height: 1.8;
+    }
+
+    .legal-content ul, .legal-content ol {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+
+    .legal-content li {
+      margin-bottom: 8px;
+      line-height: 1.7;
+      color: var(--text-primary);
+    }
+
+    .legal-content strong {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .legal-content a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(79, 107, 255, 0.3);
+      transition: border-color 0.2s ease;
+    }
+
+    .legal-content a:hover {
+      color: var(--accent-dark);
+      border-bottom-color: var(--accent);
+    }
+
+    .legal-content code {
+      background: var(--accent-light);
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-size: 0.9em;
+    }
+
+    /* Back link at top */
+    .legal-content > p:first-child a {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.9rem;
+      color: var(--accent);
+      border-bottom: none;
+      margin-bottom: 24px;
+    }
+
+    .legal-content > p:first-child {
+      margin-bottom: 24px;
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      padding: 36px 0;
+      background: var(--bg-subtle);
+      border-top: 1px solid var(--border-light);
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .footer-copyright {
+      font-size: 0.82rem;
+      color: var(--text-tertiary);
+      margin-bottom: 4px;
+    }
+
+    .footer-disclaimer {
+      font-size: 0.75rem;
+      color: var(--text-tertiary);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .legal-content {
+        padding: 32px 20px 64px;
+      }
+
+      .legal-content h1 {
+        font-size: 1.8rem;
+      }
+
+      .legal-content h2 {
+        font-size: 1.3rem;
+        margin-top: 36px;
+      }
+
+      .site-nav {
+        padding: 16px 20px;
+      }
+
+      .nav-links {
+        gap: 16px;
+      }
+
+      .footer-links {
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="{{ site.baseurl }}/" class="nav-brand">
+      <img src="{{ site.baseurl }}/assets/images/app-icon.png" alt="SnapCents" width="32" height="32">
+      SnapCents
+    </a>
+    <div class="nav-links">
+      <a href="{{ site.baseurl }}/privacy">Privacy</a>
+      <a href="{{ site.baseurl }}/terms">Terms</a>
+    </div>
+  </nav>
+
+  <main class="legal-content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <nav class="footer-links">
+        <a href="{{ site.baseurl }}/privacy">Privacy Policy</a>
+        <a href="{{ site.baseurl }}/terms">Terms of Use</a>
+        <a href="mailto:thealtcompany.it@gmail.com">Support</a>
+      </nav>
+      <p class="footer-copyright">&copy; 2026 Alt Company. All rights reserved.</p>
+      <p class="footer-disclaimer">SnapCents is not affiliated with or endorsed by Apple Inc.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

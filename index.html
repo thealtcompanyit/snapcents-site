@@ -1,0 +1,648 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SnapCents - Privacy-First Budget Tracker for iOS</title>
+  <meta name="description" content="A privacy-first iOS budget tracker. Scan receipts, track expenses, and understand your spending - all on-device. No cloud. No tracking.">
+  <meta property="og:title" content="SnapCents - Every cent makes sense.">
+  <meta property="og:description" content="A privacy-first iOS budget tracker. Scan receipts, track expenses, and understand your spending - all on-device.">
+  <meta property="og:image" content="/snapcents-site/assets/images/app-icon.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/images/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/images/app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --accent: #4F6BFF;
+      --accent-dark: #3A53E0;
+      --accent-light: rgba(79, 107, 255, 0.08);
+      --accent-glow: rgba(79, 107, 255, 0.15);
+      --text-primary: #1A1A1A;
+      --text-secondary: rgba(0, 0, 0, 0.5);
+      --text-tertiary: rgba(0, 0, 0, 0.35);
+      --bg: #FFFFFF;
+      --bg-subtle: #F8F9FC;
+      --bg-card: #FFFFFF;
+      --border-light: rgba(0, 0, 0, 0.06);
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 28px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text-primary);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Space Grotesk', 'Inter', sans-serif;
+      line-height: 1.2;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--accent-dark);
+    }
+
+    /* Layout */
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 96px 0;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 120px 0 80px;
+      text-align: center;
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg-subtle) 100%);
+    }
+
+    .hero-icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 22%;
+      box-shadow:
+        0 8px 32px rgba(79, 107, 255, 0.18),
+        0 2px 8px rgba(0, 0, 0, 0.06);
+      margin: 0 auto 32px;
+    }
+
+    .hero-title {
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+
+    .hero-tagline {
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+
+    .app-store-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--text-primary);
+      color: #FFFFFF;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.15s ease;
+      text-decoration: none;
+    }
+
+    .app-store-btn:hover {
+      background: #333;
+      color: #FFFFFF;
+      transform: translateY(-1px);
+    }
+
+    .app-store-btn svg {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    .app-store-btn-text-small {
+      font-size: 0.7rem;
+      font-weight: 400;
+      display: block;
+      line-height: 1;
+      opacity: 0.85;
+      text-align: left;
+    }
+
+    .app-store-btn-text-large {
+      font-size: 1.1rem;
+      font-weight: 600;
+      display: block;
+      line-height: 1.2;
+      text-align: left;
+    }
+
+    /* ===== SCREENSHOTS ===== */
+    .screenshots {
+      padding: 48px 0 80px;
+      background: var(--bg-subtle);
+      overflow: hidden;
+    }
+
+    .screenshots-track {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .screenshot-card {
+      flex-shrink: 0;
+      width: 260px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow:
+        0 16px 48px rgba(0, 0, 0, 0.08),
+        0 4px 12px rgba(0, 0, 0, 0.04);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .screenshot-card:nth-child(2) {
+      transform: translateY(-10px);
+    }
+
+    .screenshot-card:nth-child(3) {
+      transform: translateY(-5px);
+    }
+
+    .screenshot-card:hover {
+      transform: translateY(-6px);
+      box-shadow:
+        0 24px 64px rgba(0, 0, 0, 0.12),
+        0 8px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .screenshot-card:nth-child(2):hover {
+      transform: translateY(-16px);
+    }
+
+    .screenshot-card:nth-child(3):hover {
+      transform: translateY(-11px);
+    }
+
+    .screenshot-card img {
+      width: 100%;
+      display: block;
+    }
+
+    /* ===== FEATURES ===== */
+    .features {
+      padding: 96px 0;
+      background: var(--bg);
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .section-heading h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+
+    .section-heading p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .feature-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 32px 28px;
+      transition: box-shadow 0.25s ease, transform 0.2s ease;
+    }
+
+    .feature-card:hover {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+      transform: translateY(-2px);
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--accent-light);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .feature-icon svg {
+      width: 24px;
+      height: 24px;
+      color: var(--accent);
+      stroke: var(--accent);
+      fill: none;
+    }
+
+    .feature-card h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ===== PRIVACY CALLOUT ===== */
+    .privacy-callout {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #4F6BFF 0%, #6B7FFF 50%, #8B9AFF 100%);
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    .privacy-callout-inner {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .privacy-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+    }
+
+    .privacy-icon svg {
+      width: 32px;
+      height: 32px;
+      stroke: #FFFFFF;
+      fill: none;
+    }
+
+    .privacy-callout h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .privacy-callout p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      opacity: 0.92;
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      padding: 48px 0;
+      background: var(--bg-subtle);
+      border-top: 1px solid var(--border-light);
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .footer-copyright {
+      font-size: 0.85rem;
+      color: var(--text-tertiary);
+      margin-bottom: 6px;
+    }
+
+    .footer-disclaimer {
+      font-size: 0.78rem;
+      color: var(--text-tertiary);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 80px 0 60px;
+      }
+
+      .hero-icon {
+        width: 96px;
+        height: 96px;
+      }
+
+      .hero-title {
+        font-size: 2.4rem;
+      }
+
+      .hero-tagline {
+        font-size: 1.15rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 16px;
+      }
+
+      .section-heading h2 {
+        font-size: 1.9rem;
+      }
+
+      .screenshots-track {
+        justify-content: flex-start;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 0 32px;
+        scrollbar-width: none;
+      }
+
+      .screenshots-track::-webkit-scrollbar {
+        display: none;
+      }
+
+      .screenshot-card {
+        width: 220px;
+        scroll-snap-align: center;
+      }
+
+      .screenshot-card:nth-child(2),
+      .screenshot-card:nth-child(3) {
+        transform: none;
+      }
+
+      .privacy-callout {
+        padding: 60px 0;
+      }
+
+      .privacy-callout h2 {
+        font-size: 1.6rem;
+      }
+
+      .privacy-callout p {
+        font-size: 1.05rem;
+        padding: 0 16px;
+      }
+
+      .section {
+        padding: 72px 0;
+      }
+
+      .features {
+        padding: 72px 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .feature-card {
+        padding: 24px 22px;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .footer-links {
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <img
+        class="hero-icon"
+        src="assets/images/app-icon.png"
+        alt="SnapCents app icon"
+        width="120"
+        height="120"
+      >
+      <h1 class="hero-title">SnapCents</h1>
+      <p class="hero-tagline">Every cent makes sense.</p>
+      <p class="hero-subtitle">
+        A privacy-first iOS budget tracker. Scan receipts, track expenses,
+        and understand your spending &mdash; all on-device.
+      </p>
+      <!-- Replace with App Store link after launch -->
+      <a href="#" id="app-store-link" class="app-store-btn" aria-label="Coming soon on the App Store">
+        <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.94 2.94 12.33 4.7 9.22C5.57 7.67 7.18 6.69 8.93 6.67C10.22 6.65 11.43 7.54 12.22 7.54C13.01 7.54 14.49 6.46 16.05 6.63C16.72 6.66 18.55 6.9 19.72 8.63C19.63 8.69 17.48 9.95 17.51 12.56C17.54 15.69 20.24 16.76 20.27 16.77C20.24 16.84 19.84 18.25 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+        </svg>
+        <span>
+          <span class="app-store-btn-text-small">Coming Soon on the</span>
+          <span class="app-store-btn-text-large">App Store</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== SCREENSHOTS ===== -->
+  <section class="screenshots">
+    <div class="screenshots-track">
+      <div class="screenshot-card">
+        <img src="assets/images/screenshot-home.png" alt="SnapCents - Your Money, Visualized" width="1290" height="2796" loading="lazy">
+      </div>
+      <div class="screenshot-card">
+        <img src="assets/images/screenshot-budget.png" alt="SnapCents - Spending, Simplified" width="1290" height="2796" loading="lazy">
+      </div>
+      <div class="screenshot-card">
+        <img src="assets/images/screenshot-insights.png" alt="SnapCents - Instant Insights" width="1290" height="2796" loading="lazy">
+      </div>
+      <div class="screenshot-card">
+        <img src="assets/images/screenshot-business.png" alt="SnapCents - Personal and Business" width="1290" height="2796" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Everything you need to track spending</h2>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+              <circle cx="12" cy="13" r="4"/>
+            </svg>
+          </div>
+          <h3>Scan Receipts</h3>
+          <p>Point your camera at any receipt. AI extracts the details instantly.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"/>
+              <line x1="12" y1="20" x2="12" y2="4"/>
+              <line x1="6" y1="20" x2="6" y2="14"/>
+              <line x1="2" y1="20" x2="22" y2="20"/>
+            </svg>
+          </div>
+          <h3>Smart Budgets</h3>
+          <p>Set category limits and watch your progress in real time.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+          </div>
+          <h3>AI Insights</h3>
+          <p>On-device AI analyzes your spending patterns and streaks.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+              <line x1="12" y1="19" x2="12" y2="23"/>
+              <line x1="8" y1="23" x2="16" y2="23"/>
+            </svg>
+          </div>
+          <h3>Voice Entry</h3>
+          <p>Say "Lunch $12 at Chipotle" &mdash; done in seconds.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+          </div>
+          <h3>Business Mode</h3>
+          <p>Separate personal and business expenses with one tap.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <h3>100% Private</h3>
+          <p>All data stays on your device. No servers. No tracking.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRIVACY CALLOUT ===== -->
+  <section class="privacy-callout">
+    <div class="container">
+      <div class="privacy-callout-inner">
+        <div class="privacy-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h2>Your data never leaves your device</h2>
+        <p>
+          No accounts. No cloud. No tracking. Just you and your money.
+          Every receipt, budget, and insight is processed and stored
+          entirely on your iPhone.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-links">
+        <a href="privacy">Privacy Policy</a>
+        <a href="terms">Terms of Use</a>
+        <a href="mailto:thealtcompany.it@gmail.com">Support</a>
+      </nav>
+      <p class="footer-copyright">&copy; 2026 Alt Company. All rights reserved.</p>
+      <p class="footer-disclaimer">SnapCents is not affiliated with or endorsed by Apple Inc.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
