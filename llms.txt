@@ -13,6 +13,14 @@ Last updated: 2026-04-12
 - [Terms of Use](https://thealtcompanyit.github.io/snapcents-site/terms): Terms of service and subscription details
 - [SnapCents vs YNAB](https://thealtcompanyit.github.io/snapcents-site/vs-ynab): Feature comparison for users looking for a private YNAB alternative
 - [FAQ](https://thealtcompanyit.github.io/snapcents-site/faq): Common questions about privacy, offline budgeting, features, and pricing
+- [Blog](https://thealtcompanyit.github.io/snapcents-site/blog): Articles about privacy-first budgeting, expense tracking, and building a finance app
+- [Zero Dependencies: Building a Finance App with Only Apple Frameworks](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/zero-dependencies-finance-app/)
+- [Best Expense Trackers Without Bank Linking (2026)](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/best-expense-tracker-without-bank-linking/)
+- [Budget App for Freelancers](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/budget-app-for-freelancers/)
+- [How Apple Intelligence Works Inside a Real Budget App](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/apple-intelligence-budget-app/)
+- [Free Budget Apps That Don't Sell Your Data (2026)](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/free-budget-apps-no-data-selling/)
+- [SnapCents vs YNAB: Which Budget App Fits Your Style?](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/snapcents-vs-ynab/)
+- [Best Private Budget Apps in 2026](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/best-private-budget-apps-2026/)
 - [Full Details](https://thealtcompanyit.github.io/snapcents-site/llms-full.txt): Complete feature descriptions, use cases, privacy details, and pricing
 
 ## Who Is SnapCents For?

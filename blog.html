@@ -1,10 +1,15 @@
+---
+layout: null
+title: "Blog - SnapCents"
+description: "Articles about privacy-first budgeting, expense tracking, and building a finance app with zero dependencies."
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ page.title }} for SnapCents - Privacy-first budget tracker for iOS">
+  <title>Blog - SnapCents</title>
+  <meta name="description" content="Articles about privacy-first budgeting, expense tracking, and building a finance app with zero dependencies.">
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/app-icon.png">
   <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/app-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -88,142 +93,79 @@
       color: var(--accent);
     }
 
-    /* ===== CONTENT ===== */
-    .legal-content {
+    /* ===== BLOG INDEX ===== */
+    .blog-index {
       max-width: 800px;
       margin: 0 auto;
       padding: 48px 24px 96px;
     }
 
-    .legal-content h1 {
+    .blog-index h1 {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 2.4rem;
       font-weight: 700;
       letter-spacing: -0.03em;
       color: var(--text-primary);
       margin-bottom: 8px;
-      padding-bottom: 16px;
-      border-bottom: 3px solid var(--accent);
     }
 
-    .legal-content h2 {
+    .blog-index-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      margin-bottom: 48px;
+    }
+
+    .blog-posts {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .blog-card {
+      display: block;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border-light);
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s ease;
+    }
+
+    .blog-card:first-child {
+      border-top: 1px solid var(--border-light);
+    }
+
+    .blog-card:hover {
+      background: var(--bg-subtle);
+      margin: 0 -16px;
+      padding: 28px 16px;
+    }
+
+    .blog-card-date {
+      font-size: 0.85rem;
+      color: var(--text-tertiary);
+      margin-bottom: 6px;
+    }
+
+    .blog-card-title {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.35rem;
       font-weight: 600;
       letter-spacing: -0.02em;
       color: var(--text-primary);
-      margin-top: 48px;
-      margin-bottom: 16px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--border-light);
-    }
-
-    .legal-content h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin-top: 32px;
-      margin-bottom: 12px;
-    }
-
-    .legal-content p {
-      margin-bottom: 16px;
-      color: var(--text-primary);
-      line-height: 1.8;
-    }
-
-    .legal-content ul, .legal-content ol {
-      margin-bottom: 16px;
-      padding-left: 24px;
-    }
-
-    .legal-content li {
       margin-bottom: 8px;
-      line-height: 1.7;
-      color: var(--text-primary);
+      line-height: 1.3;
     }
 
-    .legal-content strong {
-      font-weight: 600;
-      color: var(--text-primary);
-    }
-
-    .legal-content a {
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(79, 107, 255, 0.3);
-      transition: border-color 0.2s ease;
-    }
-
-    .legal-content a:hover {
-      color: var(--accent-dark);
-      border-bottom-color: var(--accent);
-    }
-
-    .legal-content code {
-      background: var(--accent-light);
-      border-radius: 4px;
-      padding: 2px 6px;
-      font-size: 0.9em;
-    }
-
-    .legal-content table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 24px;
+    .blog-card-desc {
       font-size: 0.95rem;
-      overflow-x: auto;
-      display: block;
-    }
-
-    .legal-content thead {
-      display: table;
-      width: 100%;
-      table-layout: fixed;
-    }
-
-    .legal-content tbody {
-      display: table;
-      width: 100%;
-      table-layout: fixed;
-    }
-
-    .legal-content th {
-      text-align: left;
-      font-weight: 600;
-      padding: 12px 16px;
-      border-bottom: 2px solid var(--accent);
-      color: var(--text-primary);
-      background: var(--bg-subtle);
-      font-size: 0.9rem;
-    }
-
-    .legal-content td {
-      padding: 10px 16px;
-      border-bottom: 1px solid var(--border-light);
-      color: var(--text-primary);
+      color: var(--text-secondary);
       line-height: 1.6;
-      vertical-align: top;
     }
 
-    .legal-content tbody tr:hover {
-      background: var(--bg-subtle);
-    }
-
-    /* Back link at top */
-    .legal-content > p:first-child a {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 0.9rem;
-      color: var(--accent);
-      border-bottom: none;
-      margin-bottom: 24px;
-    }
-
-    .legal-content > p:first-child {
-      margin-bottom: 24px;
+    .blog-card-meta {
+      font-size: 0.82rem;
+      color: var(--text-tertiary);
+      margin-top: 8px;
     }
 
     /* ===== FOOTER ===== */
@@ -266,17 +208,16 @@
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 600px) {
-      .legal-content {
+      .blog-index {
         padding: 32px 20px 64px;
       }
 
-      .legal-content h1 {
+      .blog-index h1 {
         font-size: 1.8rem;
       }
 
-      .legal-content h2 {
-        font-size: 1.3rem;
-        margin-top: 36px;
+      .blog-card-title {
+        font-size: 1.15rem;
       }
 
       .site-nav {
@@ -309,8 +250,20 @@
     </div>
   </nav>
 
-  <main class="legal-content">
-    {{ content }}
+  <main class="blog-index">
+    <h1>Blog</h1>
+    <p class="blog-index-subtitle">Thoughts on privacy, budgeting, and building a finance app.</p>
+
+    <div class="blog-posts">
+      {% for post in site.posts %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="blog-card">
+        <div class="blog-card-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+        <div class="blog-card-title">{{ post.title }}</div>
+        <div class="blog-card-desc">{{ post.description }}</div>
+        <div class="blog-card-meta">{{ post.reading_time }}</div>
+      </a>
+      {% endfor %}
+    </div>
   </main>
 
   <footer class="site-footer">

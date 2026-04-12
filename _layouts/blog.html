@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ page.title }} for SnapCents - Privacy-first budget tracker for iOS">
+  <title>{{ page.title }} - SnapCents Blog</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:type" content="article">
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/app-icon.png">
   <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/app-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -88,25 +91,54 @@
       color: var(--accent);
     }
 
-    /* ===== CONTENT ===== */
-    .legal-content {
-      max-width: 800px;
+    /* ===== BLOG POST ===== */
+    .blog-content {
+      max-width: 720px;
       margin: 0 auto;
       padding: 48px 24px 96px;
     }
 
-    .legal-content h1 {
+    .blog-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.9rem;
+      color: var(--accent);
+      text-decoration: none;
+      margin-bottom: 32px;
+      transition: color 0.2s ease;
+    }
+
+    .blog-back:hover {
+      color: var(--accent-dark);
+    }
+
+    .blog-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.88rem;
+      color: var(--text-tertiary);
+      margin-bottom: 12px;
+    }
+
+    .blog-meta span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .blog-content h1 {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 2.4rem;
       font-weight: 700;
       letter-spacing: -0.03em;
       color: var(--text-primary);
-      margin-bottom: 8px;
-      padding-bottom: 16px;
-      border-bottom: 3px solid var(--accent);
+      margin-bottom: 32px;
+      line-height: 1.15;
     }
 
-    .legal-content h2 {
+    .blog-content h2 {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 1.5rem;
       font-weight: 600;
@@ -114,11 +146,9 @@
       color: var(--text-primary);
       margin-top: 48px;
       margin-bottom: 16px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--border-light);
     }
 
-    .legal-content h3 {
+    .blog-content h3 {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 1.15rem;
       font-weight: 600;
@@ -127,69 +157,80 @@
       margin-bottom: 12px;
     }
 
-    .legal-content p {
-      margin-bottom: 16px;
+    .blog-article p {
+      margin-bottom: 20px;
       color: var(--text-primary);
-      line-height: 1.8;
+      line-height: 1.85;
+      font-size: 1.05rem;
     }
 
-    .legal-content ul, .legal-content ol {
-      margin-bottom: 16px;
+    .blog-article ul, .blog-article ol {
+      margin-bottom: 20px;
       padding-left: 24px;
     }
 
-    .legal-content li {
+    .blog-article li {
       margin-bottom: 8px;
-      line-height: 1.7;
+      line-height: 1.75;
       color: var(--text-primary);
+      font-size: 1.05rem;
     }
 
-    .legal-content strong {
+    .blog-article strong {
       font-weight: 600;
       color: var(--text-primary);
     }
 
-    .legal-content a {
+    .blog-article a {
       color: var(--accent);
       text-decoration: none;
       border-bottom: 1px solid rgba(79, 107, 255, 0.3);
       transition: border-color 0.2s ease;
     }
 
-    .legal-content a:hover {
+    .blog-article a:hover {
       color: var(--accent-dark);
       border-bottom-color: var(--accent);
     }
 
-    .legal-content code {
+    .blog-article blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 20px;
+      margin: 24px 0;
+      color: var(--text-secondary);
+      font-style: italic;
+    }
+
+    .blog-article code {
       background: var(--accent-light);
       border-radius: 4px;
       padding: 2px 6px;
       font-size: 0.9em;
     }
 
-    .legal-content table {
+    .blog-article img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 24px 0;
+    }
+
+    .blog-article table {
       width: 100%;
       border-collapse: collapse;
       margin-bottom: 24px;
       font-size: 0.95rem;
-      overflow-x: auto;
-      display: block;
     }
 
-    .legal-content thead {
-      display: table;
-      width: 100%;
-      table-layout: fixed;
+    .blog-article thead {
+      display: table-header-group;
     }
 
-    .legal-content tbody {
-      display: table;
-      width: 100%;
-      table-layout: fixed;
+    .blog-article tbody {
+      display: table-row-group;
     }
 
-    .legal-content th {
+    .blog-article th {
       text-align: left;
       font-weight: 600;
       padding: 12px 16px;
@@ -199,7 +240,7 @@
       font-size: 0.9rem;
     }
 
-    .legal-content td {
+    .blog-article td {
       padding: 10px 16px;
       border-bottom: 1px solid var(--border-light);
       color: var(--text-primary);
@@ -207,23 +248,42 @@
       vertical-align: top;
     }
 
-    .legal-content tbody tr:hover {
+    .blog-article tbody tr:hover {
       background: var(--bg-subtle);
     }
 
-    /* Back link at top */
-    .legal-content > p:first-child a {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 0.9rem;
-      color: var(--accent);
-      border-bottom: none;
-      margin-bottom: 24px;
+    .blog-article hr {
+      border: none;
+      border-top: 1px solid var(--border-light);
+      margin: 48px 0;
     }
 
-    .legal-content > p:first-child {
-      margin-bottom: 24px;
+    /* ===== CTA ===== */
+    .blog-cta {
+      margin-top: 64px;
+      padding: 32px;
+      background: var(--bg-subtle);
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid var(--border-light);
+    }
+
+    .blog-cta p {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      margin-bottom: 0;
+    }
+
+    .blog-cta a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid rgba(79, 107, 255, 0.3);
+    }
+
+    .blog-cta a:hover {
+      color: var(--accent-dark);
+      border-bottom-color: var(--accent);
     }
 
     /* ===== FOOTER ===== */
@@ -266,15 +326,15 @@
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 600px) {
-      .legal-content {
+      .blog-content {
         padding: 32px 20px 64px;
       }
 
-      .legal-content h1 {
+      .blog-content h1 {
         font-size: 1.8rem;
       }
 
-      .legal-content h2 {
+      .blog-content h2 {
         font-size: 1.3rem;
         margin-top: 36px;
       }
@@ -289,6 +349,10 @@
 
       .footer-links {
         gap: 20px;
+      }
+
+      .blog-cta {
+        padding: 24px 20px;
       }
     }
   </style>
@@ -309,8 +373,23 @@
     </div>
   </nav>
 
-  <main class="legal-content">
-    {{ content }}
+  <main class="blog-content">
+    <a href="{{ site.baseurl }}/blog" class="blog-back">&larr; Back to Blog</a>
+
+    <div class="blog-meta">
+      <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+      <span>{{ page.reading_time }}</span>
+    </div>
+
+    <h1>{{ page.title }}</h1>
+
+    <article class="blog-article">
+      {{ content }}
+    </article>
+
+    <div class="blog-cta">
+      <p>SnapCents is a privacy-first budget tracker for iPhone. <a href="{{ site.baseurl }}/">Learn more</a> or <a href="#">download on the App Store</a>.</p>
+    </div>
   </main>
 
   <footer class="site-footer">

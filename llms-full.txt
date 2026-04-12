@@ -143,3 +143,14 @@ Say "Coffee $4.50 at Blue Bottle" and SnapCents logs it using on-device speech r
 - [Terms of Use](https://thealtcompanyit.github.io/snapcents-site/terms)
 - [SnapCents vs YNAB](https://thealtcompanyit.github.io/snapcents-site/vs-ynab)
 - [FAQ](https://thealtcompanyit.github.io/snapcents-site/faq)
+- [Blog](https://thealtcompanyit.github.io/snapcents-site/blog)
+
+## Blog Posts
+
+- [Zero Dependencies: Building a Finance App with Only Apple Frameworks](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/zero-dependencies-finance-app/) — How SnapCents handles receipt scanning, on-device AI, bank statement parsing, and budgeting with zero third-party libraries.
+- [Best Expense Trackers Without Bank Linking (2026)](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/best-expense-tracker-without-bank-linking/) — A fair comparison of expense tracking apps that work without connecting to your bank, including SnapCents, Goodbudget, YNAB, and more.
+- [Budget App for Freelancers: Tracking Personal and Business Expenses in One App](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/budget-app-for-freelancers/) — How freelancers can stop mixing personal and business spending with separate profiles, mileage tracking, receipt scanning, and tax-ready exports.
+- [How Apple Intelligence Works Inside a Real Budget App](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/apple-intelligence-budget-app/) — An honest look at what Apple's on-device Foundation Models can and can't do for personal finance, based on shipping a real app.
+- [Free Budget Apps That Don't Sell Your Data (2026)](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/free-budget-apps-no-data-selling/) — Which budget apps actually respect your privacy? A look at data practices across popular finance apps and alternatives that keep your data private.
+- [SnapCents vs YNAB: Which Budget App Fits Your Style?](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/snapcents-vs-ynab/) — A detailed comparison covering methodology, privacy, pricing, features, and which budgeting style each app is built for.
+- [Best Private Budget Apps in 2026](https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/12/best-private-budget-apps-2026/) — A privacy-focused roundup of budget apps rated by where data is stored, what third parties are involved, and whether bank linking is required.
