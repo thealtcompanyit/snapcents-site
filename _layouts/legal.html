@@ -74,6 +74,7 @@
     .nav-links {
       display: flex;
       gap: 24px;
+      flex-wrap: wrap;
     }
 
     .nav-links a {
@@ -165,6 +166,49 @@
       border-radius: 4px;
       padding: 2px 6px;
       font-size: 0.9em;
+    }
+
+    .legal-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+      overflow-x: auto;
+      display: block;
+    }
+
+    .legal-content thead {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    .legal-content tbody {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    .legal-content th {
+      text-align: left;
+      font-weight: 600;
+      padding: 12px 16px;
+      border-bottom: 2px solid var(--accent);
+      color: var(--text-primary);
+      background: var(--bg-subtle);
+      font-size: 0.9rem;
+    }
+
+    .legal-content td {
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--border-light);
+      color: var(--text-primary);
+      line-height: 1.6;
+      vertical-align: top;
+    }
+
+    .legal-content tbody tr:hover {
+      background: var(--bg-subtle);
     }
 
     /* Back link at top */
@@ -259,6 +303,8 @@
     <div class="nav-links">
       <a href="{{ site.baseurl }}/privacy">Privacy</a>
       <a href="{{ site.baseurl }}/terms">Terms</a>
+      <a href="{{ site.baseurl }}/faq">FAQ</a>
+      <a href="{{ site.baseurl }}/vs-ynab">vs YNAB</a>
     </div>
   </nav>
 
@@ -271,6 +317,8 @@
       <nav class="footer-links">
         <a href="{{ site.baseurl }}/privacy">Privacy Policy</a>
         <a href="{{ site.baseurl }}/terms">Terms of Use</a>
+        <a href="{{ site.baseurl }}/faq">FAQ</a>
+        <a href="{{ site.baseurl }}/vs-ynab">vs YNAB</a>
         <a href="mailto:thealtcompany.it@gmail.com">Support</a>
       </nav>
       <p class="footer-copyright">&copy; 2026 Alt Company. All rights reserved.</p>

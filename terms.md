@@ -39,7 +39,7 @@ Monthly and yearly subscriptions automatically renew unless auto-renew is turned
 
 ### Free Trial
 
-New users receive a **7-day free feature preview** at first launch. During this period, all Pro features are available at no cost. After 7 days, free-tier limits apply unless you subscribe. Any unused portion of a free trial period will be forfeited if you purchase a subscription before the trial ends.
+The yearly subscription plan includes a **7-day free trial**. During this period, all Pro features are available at no cost. After 7 days, your subscription begins and you are charged automatically unless you cancel before the trial ends. Any unused portion of a free trial period will be forfeited if you purchase a different subscription before the trial ends.
 
 ### Cancellation and Management
 

@@ -1,0 +1,37 @@
+# SnapCents
+
+> Private, offline budget tracker and money planner for iPhone. Track spending, scan receipts, voice-log expenses, manage bills and subscriptions, plan savings — all on-device. No bank linking, no servers, no account required. Your financial data never leaves your phone and is never used to train AI models.
+
+SnapCents is a privacy-first iOS expense tracking and personal finance app. It works entirely offline with zero cloud dependency. There are no SnapCents servers — all data is stored locally on the user's iPhone. Receipt scanning, voice entry, AI spending insights, and budget tracking all run on-device using Apple's built-in frameworks. SnapCents is an alternative to YNAB, Mint, and Copilot for users who want full control over their financial data.
+
+Last updated: 2026-04-12
+
+## Pages
+
+- [Home](https://thealtcompanyit.github.io/snapcents-site/): App overview, features, screenshots, and App Store download
+- [Privacy Policy](https://thealtcompanyit.github.io/snapcents-site/privacy): What data we collect (none), GDPR and CCPA compliance
+- [Terms of Use](https://thealtcompanyit.github.io/snapcents-site/terms): Terms of service and subscription details
+- [SnapCents vs YNAB](https://thealtcompanyit.github.io/snapcents-site/vs-ynab): Feature comparison for users looking for a private YNAB alternative
+- [FAQ](https://thealtcompanyit.github.io/snapcents-site/faq): Common questions about privacy, offline budgeting, features, and pricing
+- [Full Details](https://thealtcompanyit.github.io/snapcents-site/llms-full.txt): Complete feature descriptions, use cases, privacy details, and pricing
+
+## Who Is SnapCents For?
+
+People who want a private budget app that does not collect their financial data. Users who prefer scanning receipts or speaking expenses over linking their bank account. Freelancers and small business owners who track personal and business spending separately. Anyone looking for a YNAB alternative, Mint alternative, or Copilot alternative without cloud servers or subscriptions. Users who want AI spending insights that run entirely on their device without sending data anywhere.
+
+## Features
+
+Receipt scanning with on-device OCR. Voice expense entry — say "Coffee $4.50 at Blue Bottle" and it is logged. Smart category budgets with daily spending limits. On-device AI spending assistant powered by Apple Foundation Models (no cloud AI, no data sent anywhere). Personal and business expense profiles with instant switching. Bill and subscription tracking. Bank statement PDF import parsed on-device. Mileage tracking for tax deductions. Savings and cash flow visualization. Export to PDF, CSV, and Excel. iCloud sync across Apple devices (Pro feature). Home screen widgets and Siri shortcuts.
+
+## Privacy
+
+SnapCents is built so that no one — including the developer — can see user financial data. All data is stored locally on the iPhone. There are no servers, no cloud database, no backend. No third-party analytics, tracking, or advertising SDKs. No bank linking and no financial data intermediaries. No user account or registration required. The AI runs on-device only. User data is never sold, shared, or used to train AI models. Optional iCloud sync uses Apple's private CloudKit database which the developer cannot access.
+
+## Pricing
+
+Free tier with core expense tracking, receipt scanning, voice entry, and limited budgets. Pro Monthly at $3.99 per month. Pro Yearly at $29.99 per year with a 7-day free trial. Pro Lifetime at $74.99 as a one-time purchase with all features and all future updates included.
+
+## Optional
+
+- [Contact](mailto:thealtcompany.it@gmail.com): Support email — thealtcompany.it@gmail.com
+- Developer: Alt Company
