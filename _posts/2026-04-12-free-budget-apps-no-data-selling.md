@@ -6,88 +6,82 @@ description: "Which budget apps actually respect your privacy? A look at data pr
 reading_time: "9 min read"
 ---
 
-When a budgeting app is free, you should ask how they make money. Some apps sell ads. Some sell anonymized (or not-so-anonymized) spending data to marketers, hedge funds, and research firms. Some do both. And some are genuinely funded by paid tiers or one-time purchases and don't monetize your data at all.
+When a budgeting app is free, you should ask one question: how does it make money?
 
-This post covers what's actually happening with your data in popular budget apps, and lists alternatives that are transparent about their practices.
+Some apps sell ads. Some sell "anonymized" transaction data to hedge funds, market researchers, and advertisers. Some earn referral fees by recommending credit cards and loans based on your spending patterns. And a few are funded entirely by paid tiers, with no data monetization at all.
 
-## How Budget Apps Monetize Data
+The difference matters more than most people realize.
 
-The most common way free finance apps make money from your data is by selling anonymized transaction data to third parties. When you link your bank account, the app sees every transaction. That data, aggregated across millions of users, is valuable.
+## Your Spending Data Is a Fingerprint
 
-Market research firms want to know how consumer spending at Target changes quarter over quarter. Hedge funds want early signals on retail sales trends. Advertisers want to know that you spend $200/month at Whole Foods so they can target you with competitor offers.
+The word "anonymized" appears in almost every finance app's privacy policy. But research has consistently shown that financial transaction data is remarkably easy to re-identify. A 2015 study published in Science found that just four transaction data points were enough to uniquely identify 90% of individuals in a dataset of 1.1 million people.
 
-The word "anonymized" does a lot of heavy lifting here. Studies have repeatedly shown that financial transaction data can be re-identified with surprisingly little effort. Your spending patterns are effectively a fingerprint. The combination of where you shop, when you shop, and how much you spend is often unique enough to identify you even without your name attached.
+Think about your own spending. The combination of where you shop, when you shop, and how much you spend creates a pattern that's effectively unique to you. Your Monday morning coffee at a specific shop, your weekly grocery run, your streaming subscriptions, your monthly rent payment. Strip the name off that data, and it's still identifiably yours.
 
-## What Popular Apps Do
+This is what apps hand to third parties when they sell "anonymized" spending data.
 
-Mint (before it shut down in 2024) was ad-supported and sold anonymized spending data. It also recommended financial products and earned referral fees. The app was free because you were the product.
+## The Plaid Problem
 
-Credit Karma, which absorbed many Mint users, makes money through targeted financial product recommendations based on your credit score and financial profile. Your data drives the recommendation engine.
+Most finance apps that offer bank linking use a data aggregator like Plaid, Yodlee, MX, or Finicity. These companies act as intermediaries between your bank and the app. When you "link" your bank account, you're giving the aggregator your bank credentials. It logs in on your behalf, scrapes your transactions, and passes them to the app.
 
-Many apps that use Plaid for bank linking should be considered carefully. Plaid acts as a financial data intermediary, and while it's improved its practices after settling a $58 million privacy lawsuit in 2022, it still processes your bank credentials and transaction data. Any app using Plaid means your data passes through a third-party server, regardless of what the app itself does with it.
+Plaid settled a $58 million privacy lawsuit in 2022. The lawsuit alleged that Plaid collected more financial data than users authorized and shared it in ways users didn't expect. Plaid has updated its practices since then, but the fundamental architecture remains: your bank credentials and transaction history flow through a third-party company's servers.
 
-Apps built on Yodlee, MX, or Finicity have similar data intermediary dynamics. Your bank data flows through these companies' servers as part of the linking process.
+Any app that uses Plaid means your data passes through Plaid's infrastructure, regardless of what the app itself does with it. This is true even for apps that claim they "don't sell your data." They might not, but the intermediary has already processed it.
 
-## Apps That Don't Sell Your Data
+## Policy Privacy vs. Architectural Privacy
 
-These are apps where your spending data either never leaves your device or stays within a limited, transparent infrastructure.
+There's an important distinction between apps that promise not to sell your data and apps that are built so they physically cannot collect it.
 
-### SnapCents
+**Policy privacy** means a company has your data but their privacy policy says they won't sell it. This depends on the company keeping its word, not being acquired by a company with different policies, not being compelled by a government subpoena, and not being breached.
 
-SnapCents takes the most extreme approach on this list: there are no servers. All data is stored locally on your iPhone. There is no SnapCents backend, no database, no cloud infrastructure that could hold your data even if the developer wanted it. The app has no third-party analytics SDKs, no ad networks, no data intermediaries.
+**Architectural privacy** means there's no server to store your data, no intermediary to process it, and no mechanism to collect it. The privacy guarantee isn't a policy document. It's the technical design of the app.
 
-The free tier includes core expense tracking, receipt scanning, voice entry, and basic budgets. The paid Pro tier ($3.99/month, $29.99/year, or $74.99 lifetime) unlocks unlimited budgets, export, widgets, mileage tracking, and unlimited AI chat. Revenue comes entirely from subscriptions and the lifetime purchase. There is no data monetization because there is no mechanism to collect data.
+Mint (which shut down in 2024) is a cautionary tale for policy privacy. Intuit's privacy policy evolved over the years. The app was free because user data drove product recommendations, ad targeting, and aggregated data sales. Users who trusted the policy had no recourse when the terms shifted.
 
-This is verifiable. Because SnapCents doesn't use Plaid or any bank-linking service, your bank credentials never leave your device. Because there's no SnapCents server, there's nowhere for transaction data to be sent. The privacy isn't a policy commitment, it's an architectural fact.
+## SnapCents: Privacy by Architecture
 
-### Goodbudget
+SnapCents takes the architectural approach. There is no SnapCents server. No backend. No database. No cloud infrastructure of any kind.
 
-Goodbudget syncs data across devices using their own servers, but their privacy policy is straightforward about not selling user data. Revenue comes from the paid Plus plan ($10/month or $80/year). The free tier covers 10 envelopes and basic features.
+All data is stored locally on your iPhone using Apple's SwiftData framework. The app has no third-party analytics SDKs, no ad networks, no Plaid integration, no data intermediaries. There is no account to create. No email address to provide. No password to manage.
 
-The data does live on Goodbudget's servers for sync purposes. If Goodbudget were compromised, your financial data could be exposed. But in normal operation, they don't sell or share it with third parties.
+This means your financial data physically cannot be accessed by the developer, by advertisers, by data brokers, or by anyone else. Not because of a policy promise, but because there's nowhere for the data to exist except on your phone.
 
-### YNAB
+Optional iCloud sync uses Apple's private CloudKit database. Even with sync enabled, the developer cannot access the data. Apple's CloudKit private database is encrypted and accessible only to the user's Apple ID.
 
-YNAB stores your data on their cloud servers. If you use bank linking, your data also flows through a third-party aggregator. However, YNAB's revenue model is entirely subscription-based ($14.99/month or $99/year), and their privacy policy states they don't sell user data.
+The app still offers features you'd expect from a modern expense tracker: receipt scanning, voice entry, AI-powered spending insights, category budgets, business profiles, and mileage tracking. All of it runs on-device. The AI uses Apple's Foundation Models, processing your data locally without any server round-trip.
 
-The distinction here: your data is on YNAB's servers and potentially on a data aggregator's servers, but neither party sells it. You're trusting two companies with your financial data instead of zero, but neither is monetizing that data beyond providing the service.
+**How it makes money:** SnapCents has a free tier with core tracking features. The Pro tier ($3.99/month, $29.99/year with a 7-day free trial, or $74.99 lifetime) unlocks unlimited budgets, export, widgets, mileage tracking, and unlimited AI chat. Revenue comes from users paying for the app. There is no secondary data revenue stream because there is no data to monetize.
 
-### Apple's Built-In Wallet/Finance Features
-
-If you're on iOS, Apple's own tools (Apple Card spending tracker, the Wallet app's transaction history) keep data within Apple's ecosystem. Apple's privacy stance on financial data is well-documented, and their business model doesn't depend on selling user data. The limitation is that these tools are basic and only work with Apple Card or Apple Pay transactions.
-
-## How to Evaluate an App's Data Practices
+## How to Evaluate Any App's Data Practices
 
 Looking beyond marketing claims, here are concrete things to check.
 
-**Read the privacy policy, specifically the "Information We Share" section.** Skip the "we value your privacy" opening. Go straight to what they share and with whom. Look for phrases like "business partners," "analytics providers," and "as permitted by law."
+**Read the "Information We Share" section of the privacy policy.** Skip the "we value your privacy" preamble. Look for phrases like "business partners," "analytics providers," "aggregated and de-identified data," and "as permitted by law." Those phrases usually mean your data goes somewhere.
 
-**Check for bank linking.** If an app connects to your bank, your data flows through at least one intermediary (usually Plaid, Yodlee, MX, or Finicity). Even if the app doesn't sell your data, the intermediary processes it.
+**Check for bank linking.** If an app connects to your bank, your data flows through at least one intermediary, regardless of what the app itself does. The intermediary has processed your credentials and transaction history.
 
-**Check the App Store privacy labels.** Apple requires developers to declare what data they collect. Look at the "Data Used to Track You" and "Data Linked to You" sections. A finance app that lists "Purchases" under "Data Used to Track You" is using your spending data for advertising or cross-app tracking.
+**Check the App Store privacy labels.** Apple requires developers to declare what data they collect. A finance app that lists "Purchases" under "Data Used to Track You" is using your spending data for advertising or cross-app tracking.
 
-**Look at the business model.** A free app with no ads and no paid tier has to make money somehow. That "somehow" is usually your data. Apps with clear paid tiers (subscriptions, one-time purchases) have less incentive to monetize data because they have revenue from users directly.
+**Follow the business model.** A free app with no ads and no paid tier makes money from something. That something is usually your data. Apps with clear paid tiers have less incentive to monetize data because they have direct revenue from users.
 
-## The Spectrum of Privacy
+**Look for third-party SDKs.** Apps that include Google Analytics, Mixpanel, Amplitude, Facebook SDK, or ad network SDKs are sending behavioral data to those companies. Even if the app doesn't sell your financial data directly, these SDKs track how you use the app and often share data for advertising purposes.
 
-It's worth being realistic about this. Privacy in budget apps exists on a spectrum, not as a binary.
+## The Privacy Spectrum in Budget Apps
 
-On one end: apps with no servers, no bank linking, and no data collection (SnapCents). Your data physically cannot be accessed by anyone other than you.
+Not all cloud-based apps are equally concerning. There's a range.
 
-In the middle: apps that store data on their servers for sync but don't sell it (YNAB, Goodbudget). Your data exists on someone else's computer, but they're not monetizing it.
+Apps like YNAB and Goodbudget store your data on their servers but don't sell it. Their revenue comes from subscriptions. The risk is a server breach or a policy change, not active data monetization. YNAB stores data on their cloud and uses a third-party aggregator for bank linking. Goodbudget uses their own servers for sync but has no bank linking.
 
-On the other end: free apps that monetize through data sharing, ads, and financial product referrals. Your spending patterns are the product.
+Apps that are free with no clear revenue source are the ones to scrutinize. If you can't identify how an app makes money, it's making money from you.
 
-Most people are somewhere in the middle in terms of what they're comfortable with. YNAB's cloud storage is probably fine for most users who aren't specifically concerned about server breaches or government subpoenas. Goodbudget's sync servers are similarly reasonable.
-
-If you're at the privacy-conscious end of the spectrum, the question is simpler: does this app have a server that stores my data, and does it connect to my bank through a third party? If the answer to both is no, your data stays on your device.
+Then there are apps with no servers at all. SnapCents is in this category. Your data stays on your device. There's no server to breach, no policy to change, no intermediary to process your credentials.
 
 ## The Real Cost of "Free"
 
-A free budgeting app that sells your data isn't actually free. You're paying with information about every purchase you make, every bill you pay, and every pattern in your financial life. That information has real market value.
+A free budgeting app that monetizes your data isn't actually free. You're paying with detailed information about every purchase you make, every bill you pay, every financial pattern in your life. That data has real market value. Aggregated consumer spending data sells for significant sums to hedge funds, retailers, and market research firms.
 
-The alternative is paying for the app directly. $3-15 per month, or a one-time lifetime purchase, funds the developer without requiring your data as a secondary revenue stream.
+The alternative is paying for the app directly. A few dollars a month, or a one-time lifetime purchase, funds development without requiring your data as a secondary revenue stream. SnapCents' $74.99 lifetime option means you pay once and your financial data stays private forever. No subscription renewals, no data collection, no policy changes to worry about.
 
-Whether that tradeoff matters to you is a personal decision. Some people are fine with data monetization in exchange for a free product. Others would rather pay and keep their financial life private. Both are valid positions.
+Knowing which arrangement you're in matters more than the arrangement itself. If your budget app is free, has no ads, and has no paid tier, understand exactly how it makes money. Because it's making money from something.
 
-The important thing is knowing which arrangement you're in. If your budget app is free, has no ads, and has no paid tier, you should understand exactly how it makes money. Because it's making money from something.
+*SnapCents is available on the [App Store](https://thealtcompanyit.github.io/snapcents-site/). Free to download with a Pro upgrade for power users.*
