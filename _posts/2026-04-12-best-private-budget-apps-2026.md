@@ -96,4 +96,4 @@ SnapCents answers these cleanly: no servers, no bank linking, no analytics SDKs,
 
 Financial privacy isn't about having nothing to hide. It's about controlling who has access to a detailed record of your daily life. With SnapCents, that access belongs to you and no one else.
 
-*SnapCents is available on the [App Store](https://thealtcompanyit.github.io/snapcents-site/). Free to download with a Pro upgrade for power users.*
+*SnapCents is available on the [App Store](https://apps.apple.com/us/app/snapcents-budget-tracker/id6761669127). Free to download with a Pro upgrade for power users.*

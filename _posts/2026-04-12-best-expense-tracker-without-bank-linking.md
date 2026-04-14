@@ -76,4 +76,4 @@ The decision comes down to a few key questions.
 
 The right expense tracker is the one you'll actually use. For people who want privacy, fast entry, and a one-time purchase price, SnapCents handles all three without requiring you to link a bank account or create an account.
 
-*SnapCents is available on the [App Store](https://thealtcompanyit.github.io/snapcents-site/). Free to download with a Pro upgrade for power users.*
+*SnapCents is available on the [App Store](https://apps.apple.com/us/app/snapcents-budget-tracker/id6761669127). Free to download with a Pro upgrade for power users.*

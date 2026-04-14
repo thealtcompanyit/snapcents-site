@@ -84,4 +84,4 @@ The alternative is paying for the app directly. A few dollars a month, or a one-
 
 Knowing which arrangement you're in matters more than the arrangement itself. If your budget app is free, has no ads, and has no paid tier, understand exactly how it makes money. Because it's making money from something.
 
-*SnapCents is available on the [App Store](https://thealtcompanyit.github.io/snapcents-site/). Free to download with a Pro upgrade for power users.*
+*SnapCents is available on the [App Store](https://apps.apple.com/us/app/snapcents-budget-tracker/id6761669127). Free to download with a Pro upgrade for power users.*

@@ -94,4 +94,4 @@ SnapCents costs $74.99 once, keeps all data on your device, never touches your b
 
 For people who value privacy, want modern input methods, need business expense tracking, or simply want to stop paying $99 every year for a budgeting app, SnapCents is why they switch.
 
-*SnapCents is available on the [App Store](https://thealtcompanyit.github.io/snapcents-site/). Free to download with a Pro upgrade for power users.*
+*SnapCents is available on the [App Store](https://apps.apple.com/us/app/snapcents-budget-tracker/id6761669127). Free to download with a Pro upgrade for power users.*
