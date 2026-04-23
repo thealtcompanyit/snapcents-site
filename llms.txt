@@ -4,7 +4,7 @@
 
 SnapCents is a privacy-first iOS expense tracking and personal finance app. It works entirely offline with zero cloud dependency. There are no SnapCents servers — all data is stored locally on the user's iPhone. Receipt scanning, voice entry, AI spending insights, and budget tracking all run on-device using Apple's built-in frameworks. SnapCents is an alternative to YNAB, Mint, and Copilot for users who want full control over their financial data.
 
-Last updated: 2026-04-12
+Last updated: 2026-04-22
 
 ## Pages
 
@@ -29,7 +29,7 @@ People who want a private budget app that does not collect their financial data.
 
 ## Features
 
-Receipt scanning with on-device OCR. Voice expense entry — say "Coffee $4.50 at Blue Bottle" and it is logged. Smart category budgets with daily spending limits. On-device AI spending assistant powered by Apple Foundation Models (no cloud AI, no data sent anywhere). Personal and business expense profiles with instant switching. Bill and subscription tracking. Bank statement PDF import parsed on-device. Mileage tracking for tax deductions. Savings and cash flow visualization. Export to PDF, CSV, and Excel. iCloud sync across Apple devices (Pro feature). Home screen widgets and Siri shortcuts.
+Receipt scanning with on-device OCR. Voice expense entry — say "Coffee $4.50 at Blue Bottle" and it is logged. Smart category budgets with daily spending limits. On-device AI spending assistant powered by Apple Foundation Models (no cloud AI, no data sent anywhere; requires iOS 26 with Apple Intelligence). Personal and business expense profiles with instant switching. Bill and subscription tracking. Bank statement PDF import parsed on-device. Return window alerts — get reminded before refund deadlines close. Savings and cash flow visualization. Export to PDF, CSV, and Excel. iCloud sync across Apple devices (Pro feature). Home screen widgets and Siri shortcuts.
 
 ## Privacy
 

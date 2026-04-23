@@ -7,3 +7,5 @@ permalink: /blog/:year/:month/:day/:title/
 include:
   - llms.txt
   - llms-full.txt
+  - robots.txt
+  - sitemap.xml

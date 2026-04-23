@@ -2,7 +2,7 @@
 
 > Private, offline budget tracker and money planner for iPhone. Track spending, scan receipts, voice-log expenses, manage bills and subscriptions, plan savings — all on-device. No bank linking, no servers, no account required. Your financial data never leaves your phone and is never used to train AI models.
 
-Last updated: 2026-04-12
+Last updated: 2026-04-22
 
 ## What Is SnapCents?
 
@@ -35,7 +35,7 @@ Say "Lunch $12 at Chipotle" or "Coffee $4.50 at Blue Bottle" and the expense is 
 Create category budgets with daily spending limits. Track progress in real time with visual indicators. See how much you can spend each day to stay within your monthly budget. Supports weekly, monthly, and custom budget periods.
 
 ### AI Spending Assistant
-An on-device AI assistant that analyzes spending patterns, tracks streaks, summarizes trends, and answers questions about your finances. Powered by Apple Foundation Models running entirely on the iPhone. No internet connection required. Your financial data never leaves the device — the AI processes everything locally.
+An on-device AI assistant that analyzes spending patterns, tracks streaks, summarizes trends, and answers questions about your finances. Powered by Apple Foundation Models running entirely on the iPhone. No internet connection required. Your financial data never leaves the device — the AI processes everything locally. On-device AI features require iOS 26 with Apple Intelligence.
 
 ### Personal and Business Profiles
 Track personal money and business expenses separately with instant profile switching. Each profile has its own transactions, budgets, categories, and reports. Useful for freelancers, contractors, and small business owners who need clean separation for tax purposes.
@@ -46,8 +46,8 @@ Monitor recurring bills and subscriptions. Track monthly costs and see total rec
 ### Bank Statement Import
 Download a PDF statement from your bank's website and import it into SnapCents. The app parses the PDF entirely on-device using Apple's Vision framework. No data is sent to any server. Works with most standard bank and credit card statement formats.
 
-### Mileage Tracking
-Log business miles for tax deductions. Track trips with distance and purpose. Useful for freelancers and business users who need mileage records for expense reports or tax filings.
+### Return Reminders
+Set return window alerts when you buy something you might return. Get notified before refund deadlines close so you never miss a return window.
 
 ### Savings and Cash Flow
 Visualize daily, weekly, and monthly cash flow. See spending trends over time. Understand where your money goes with category breakdowns and spending charts.
@@ -80,7 +80,7 @@ SnapCents is built so that no one — including the developer — can see, acces
 SnapCents has a free tier and paid Pro plans:
 
 - **Free**: Core expense tracking, receipt scanning, voice entry, basic budgets, and spending charts. Free forever with some limits on budgets, categories, and AI chat messages.
-- **Pro Monthly**: $3.99 per month. Unlocks unlimited budgets, unlimited categories, unlimited AI chat, export, widgets, Siri shortcuts, and mileage tracking.
+- **Pro Monthly**: $3.99 per month. Unlocks unlimited budgets, unlimited categories, unlimited AI chat, export, widgets, Siri shortcuts, and subscription tracking.
 - **Pro Yearly**: $29.99 per year with a 7-day free trial. Same features as Pro Monthly.
 - **Pro Lifetime**: $74.99 one-time purchase. All Pro features forever. All future updates included. No recurring charges.
 
@@ -89,7 +89,7 @@ There are no ads in any tier. No data is sold in any tier.
 ## How SnapCents Compares
 
 ### SnapCents vs YNAB
-YNAB costs $14.99/month ($99/year) with no lifetime option. YNAB imports transactions automatically from your bank through third-party services and stores your data on its cloud servers. SnapCents costs $74.99 once (lifetime) and stores all data on your device. SnapCents has receipt scanning, voice entry, on-device AI, mileage tracking, and business profiles — features YNAB does not offer. YNAB has automatic bank sync, shared budgets, and a web app — features SnapCents does not offer.
+YNAB costs $14.99/month ($99/year) with no lifetime option. YNAB imports transactions automatically from your bank through third-party services and stores your data on its cloud servers. SnapCents costs $74.99 once (lifetime) and stores all data on your device. SnapCents has receipt scanning, voice entry, on-device AI, subscription tracking, and business profiles — features YNAB does not offer. YNAB has automatic bank sync, shared budgets, and a web app — features SnapCents does not offer.
 
 ### SnapCents vs Mint
 Mint was a free ad-supported budget app that shut down in 2024. Users looking for a Mint replacement who want privacy can use SnapCents. Unlike Mint, SnapCents has no ads, no tracking, no servers, and no data collection.
