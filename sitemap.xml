@@ -67,6 +67,26 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/22/snapcents-vs-monarch/</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/22/snapcents-vs-copilot/</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/22/snapcents-vs-everydollar/</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thealtcompanyit.github.io/snapcents-site/blog/2026/04/22/snapcents-vs-rocket-money/</loc>
+    <lastmod>2026-04-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://thealtcompanyit.github.io/snapcents-site/llms.txt</loc>
     <lastmod>2026-04-22</lastmod>
     <priority>0.3</priority>
