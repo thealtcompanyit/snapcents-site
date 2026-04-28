@@ -4,6 +4,10 @@ theme: minima
 baseurl: ""
 url: "https://snapcents.app"
 permalink: /blog/:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+feed:
+  path: feed.xml
 include:
   - llms.txt
   - llms-full.txt

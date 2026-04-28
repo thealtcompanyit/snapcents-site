@@ -39,3 +39,22 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Notify IndexNow
+        run: |
+          curl -sS -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "host": "snapcents.app",
+              "key": "95ef4507cb7700dbf7427957079b51d1",
+              "keyLocation": "https://snapcents.app/95ef4507cb7700dbf7427957079b51d1.txt",
+              "urlList": [
+                "https://snapcents.app/",
+                "https://snapcents.app/privacy",
+                "https://snapcents.app/terms",
+                "https://snapcents.app/faq",
+                "https://snapcents.app/vs-ynab",
+                "https://snapcents.app/blog",
+                "https://snapcents.app/sitemap.xml"
+              ]
+            }' || echo "IndexNow ping failed (non-fatal)"

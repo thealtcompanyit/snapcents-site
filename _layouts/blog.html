@@ -10,6 +10,63 @@
   <meta property="og:type" content="article">
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/app-icon.png">
   <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/app-icon.png">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" type="text/markdown" title="llms.txt" href="{{ site.baseurl }}/llms.txt">
+  <link rel="alternate" type="application/rss+xml" title="SnapCents Blog" href="{{ site.baseurl }}/feed.xml">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ page.title | jsonify }},
+    "description": {{ page.description | jsonify }},
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}",
+    "author": {
+      "@type": "Organization",
+      "name": "Alt Company",
+      "url": "https://snapcents.app"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SnapCents",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://snapcents.app/assets/images/app-icon.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://snapcents.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://snapcents.app/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": {{ page.title | jsonify }},
+        "item": "{{ page.url | absolute_url }}"
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
