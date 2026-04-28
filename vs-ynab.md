@@ -1,6 +1,7 @@
 ---
 layout: legal
 title: SnapCents vs YNAB - Privacy-First Budget App Alternative - SnapCents
+description: "How SnapCents compares to YNAB on privacy, pricing, and methodology. On-device data vs. cloud servers, $74.99 lifetime vs. $99 per year."
 ---
 
 # SnapCents vs YNAB

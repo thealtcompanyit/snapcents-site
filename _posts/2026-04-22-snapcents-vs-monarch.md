@@ -3,6 +3,7 @@ layout: blog
 title: "SnapCents vs Monarch: Why Your Budget App Shouldn't Need Your Bank Password"
 date: 2026-04-22
 description: "Monarch requires bank linking and costs $14.99/month. SnapCents tracks expenses privately on your device for free. Here's why that matters."
+reading_time: "8 min read"
 ---
 
 Monarch asks for your bank password within the first five minutes. It routes your credentials through Plaid, a third-party data intermediary, to pull transactions from your accounts. Your financial data then lives on Monarch's cloud servers. You pay $14.99/month for this arrangement.

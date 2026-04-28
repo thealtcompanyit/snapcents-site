@@ -1,6 +1,7 @@
 ---
 layout: legal
 title: Privacy Policy - SnapCents
+description: "SnapCents privacy policy. What we don't collect, how on-device processing works, and what iCloud Sync stores in your personal account."
 ---
 
 # Privacy Policy

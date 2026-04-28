@@ -1,6 +1,7 @@
 ---
 layout: legal
 title: Terms of Use - SnapCents
+description: "SnapCents terms of use. License, acceptable use, disclaimers, and contact information for the privacy-first iOS budget tracker."
 ---
 
 # Terms of Use

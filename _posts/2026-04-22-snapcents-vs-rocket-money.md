@@ -3,6 +3,7 @@ layout: blog
 title: "SnapCents vs Rocket Money: Track Subscriptions Without Handing Over Your Bank Login"
 date: 2026-04-22
 description: "Rocket Money requires bank linking and takes a cut of your savings. SnapCents tracks subscriptions and expenses privately on your device."
+reading_time: "8 min read"
 ---
 
 Rocket Money was acquired by Rocket Companies — the mortgage giant — for $1.275 billion. Ask yourself: why is a mortgage company willing to pay that much for an app that tracks your spending?

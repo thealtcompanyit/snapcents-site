@@ -1,6 +1,7 @@
 ---
 layout: legal
 title: FAQ - SnapCents
+description: "Answers to common SnapCents questions — privacy, on-device AI, bank linking, iCloud sync, pricing, and feature limits across free and Pro tiers."
 ---
 
 # Frequently Asked Questions
