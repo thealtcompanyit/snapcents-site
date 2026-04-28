@@ -1,8 +1,8 @@
 title: SnapCents
 description: Privacy-first budget tracker for iOS
 theme: minima
-baseurl: "/snapcents-site"
-url: ""
+baseurl: ""
+url: "https://snapcents.app"
 permalink: /blog/:year/:month/:day/:title/
 include:
   - llms.txt
